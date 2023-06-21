@@ -1,0 +1,9 @@
+types available in TS:
+
+number, string, boolean
+null, undefined, void
+object, arrays, tuples
+any, never, unknown 
+
+
+

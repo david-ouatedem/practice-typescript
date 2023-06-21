@@ -1,22 +1,15 @@
 "use strict";
-// const calculate = (x: number, y: number, z: number) => {
-//   return (x * y) + z
-// }
-const calculate = ({ x, y, z }) => {
-    return (x * y) + z;
-};
-const result = calculate({ x: 5, y: 8, z: 9 });
-console.log(result);
-function concatWithDefault(a, b = "default") {
-    console.log(a + b);
+function addTwo(num) {
+    return num + 2;
 }
-// function callbacks 
-const headerText = (text) => {
-    console.log(text);
-};
-// function myCallback(text:string):void{}
-const messageText = (message, callbackFn = (text) => { }) => {
-    console.log(message);
-    callbackFn('some dummy text');
-};
+addTwo(8);
+function getUpper(val) {
+    return val.toLocaleUpperCase();
+}
+getUpper('hello');
+function signUpUser(name, email, isPaid) {
+    // return what you need
+}
+signUpUser('dave', 'dav@dev.com', false);
+// to assign types to a function you have to asign the type of what the function takes in if any and assign the type of what it returns
 //# sourceMappingURL=functions.js.map

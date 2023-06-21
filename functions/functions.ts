@@ -1,33 +1,16 @@
-type calculate = {
-  x: number
-  y: number
-  z: number
+function addTwo(num: number): number{
+  return num + 2
 }
-// const calculate = (x: number, y: number, z: number) => {
-//   return (x * y) + z
-// }
+addTwo(8)
 
-const calculate = ({x, y, z}: calculate): number => {
-  return (x * y) + z
+function getUpper(val: string): string{
+  return val.toLocaleUpperCase()
 }
+getUpper('hello')
 
-const result: number = calculate({x:5, y:8 , z:9})
+function signUpUser(name: string, email: string, isPaid: boolean){
+  // return what you need
+}
+signUpUser('dave', 'dav@dev.com', false)
 
-console.log(result);
-
-function concatWithDefault(a: string, b: string = "default") {
-  console.log(a + b);
-  }
-
-  // function callbacks 
-  const headerText = (text: string) => {
-    console.log(text);
-    
-  }
-
-  // function myCallback(text:string):void{}
-
-  const messageText = (message: string, callbackFn = (text:string):void =>{}) => {
-      console.log(message);
-      callbackFn('some dummy text')
-  }
+// to assign types to a function you have to asign the type of what the function takes in if any and assign the type of what it returns

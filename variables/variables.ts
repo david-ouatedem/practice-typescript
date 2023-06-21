@@ -1,7 +1,27 @@
-console.log("hello typescript");
+// string
+let greetings: string = "hello dave"
 
-const myName: string = "david"
+greetings.toLowerCase()
+console.log(greetings);
 
-let id: number = 1
+// number
+let userId: number = 556982
 
-const isOpen: boolean = false
+userId.toFixed()
+
+//boolean
+let loggedIn: boolean = false
+
+loggedIn.valueOf()
+
+// NB: variables can infer the type of thier values so no need to place the type anotation. using strict type on variables like the ones above is bad practice. 
+
+// any 
+let hero: string;
+
+function getHero(){
+  return 'thor'
+}
+hero = getHero()
+//NB: it is bad practice to use any, you should avoid it
+

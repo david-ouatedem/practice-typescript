@@ -1,1 +1,1 @@
-{"version":3,"file":"getterAndSetter.js","sourceRoot":"","sources":["getterAndSetter.ts"],"names":[],"mappings":""}
+{"version":3,"file":"getterAndSetter.js","sourceRoot":"","sources":["getterAndSetter.ts"],"names":[],"mappings":";AAAA,MAAM,MAAM;IACF,SAAS,CAAQ;IACjB,IAAI,CAAQ;IACZ,MAAM,CAAS;IAEvB,IAAI,KAAK;QACP,OAAO,IAAI,CAAC,MAAM,CAAA;IACpB,CAAC;IACD,IAAI,KAAK,CAAC,WAAoB;QAC5B,IAAG,WAAW,KAAK,IAAI,EAAC;YACtB,OAAO,CAAC,GAAG,CAAC,aAAa,CAAC,CAAC;SAC5B;QACD,IAAI,CAAC,MAAM,GAAG,WAAW,CAAA;IAC3B,CAAC;CACF;AAED,IAAI,MAAM,GAAG,IAAI,MAAM,EAAE,CAAA;AACzB,MAAM,CAAC,KAAK,GAAG,IAAI,CAAA"}
