@@ -103,4 +103,15 @@ secondInstance.updatecount();
 console.log(StaticProperty.count);
 firstInstance.updatecount();
 console.log(StaticProperty.count);
+// namespaces
+var FirstNameSpace;
+(function (FirstNameSpace) {
+    class NameSpaceClass {
+    }
+    FirstNameSpace.NameSpaceClass = NameSpaceClass;
+    class NotExported {
+    }
+})(FirstNameSpace || (FirstNameSpace = {}));
+let nameSpaceClass = new FirstNameSpace.NameSpaceClass();
+// the class NotExported cannot be accessed outside the namespace because it doesn't have the axport keyword
 //# sourceMappingURL=classes.js.map
