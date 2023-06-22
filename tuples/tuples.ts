@@ -7,3 +7,9 @@ myTuple = ['text', false, 5]
 let [tupleString, tupleBool, tupleNumber] = myTuple
 
 console.log(tupleString, tupleBool, tupleString);
+
+
+const users: (string|number)[] = [1, 'hc']
+
+let tupleUsers: [string, number, boolean]
+tupleUsers = ['dave', 5, true ]
