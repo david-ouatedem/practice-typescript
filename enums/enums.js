@@ -1,31 +1,10 @@
 "use strict";
-var logState;
-(function (logState) {
-    logState[logState["logedIn"] = 0] = "logedIn";
-    logState[logState["logedOut"] = 1] = "logedOut";
-})(logState || (logState = {}));
-// const enum logState {
-//   logedIn,
-//   logedOut
-// }
-// enum logState {
-//   logedIn = 0,
-//   logedOut = 1
-// }
-// enum logState {
-//   logedIn =  'loged-in',
-//   logedOut = 'loged-out'
-// }
-const checkLogedState = (state) => {
-    switch (state) {
-        case logState.logedIn:
-            console.log("is loged in");
-            break;
-        case logState.logedOut:
-            console.log("is loged out");
-            break;
-    }
-};
-checkLogedState(logState.logedIn);
-checkLogedState(logState.logedOut);
+var seatChoice;
+(function (seatChoice) {
+    seatChoice[seatChoice["ailse"] = 0] = "ailse";
+    seatChoice[seatChoice["middle"] = 1] = "middle";
+    seatChoice[seatChoice["window"] = 2] = "window";
+    seatChoice[seatChoice["fourth"] = 3] = "fourth";
+})(seatChoice || (seatChoice = {}));
+const hcSeat = seatChoice.ailse;
 //# sourceMappingURL=enums.js.map

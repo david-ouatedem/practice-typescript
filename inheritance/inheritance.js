@@ -58,7 +58,7 @@ class fullTimeEmployee extends EmployeeAbstractClass {
         return this.salary;
     }
     statement() {
-        return `${this.getFullName()} ${super.statement('hello')}`;
+        return `${super.statement('hello')}`;
     }
 }
 let john = new fullTimeEmployee('john', 'doe', 500000);
