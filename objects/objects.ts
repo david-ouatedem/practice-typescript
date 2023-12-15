@@ -1,27 +1,25 @@
-interface userInterface{
-  name: string,
-  id: number,
-  isAdmin: boolean,
-  login?(): void
+interface userInterface {
+  name: string;
+  id: number;
+  isAdmin: boolean;
+  login?(): void;
 }
 let user: userInterface = {
-  name: 'dave',
+  name: "dave",
   id: 1,
   isAdmin: true,
-  login() {
-      
-  },
-}
+  login() {},
+};
 
 user = {
   id: 2,
   isAdmin: false,
-  name: 'wilfred',
-  login() {}
-}
+  name: "wilfred",
+  login() {},
+};
 // explict casting
 const anotherUser = <userInterface>{
-  name: 'edwin',
+  name: "garry",
   id: 3,
   isAdmin: false,
-}
+};

@@ -114,4 +114,13 @@ var FirstNameSpace;
 })(FirstNameSpace || (FirstNameSpace = {}));
 let nameSpaceClass = new FirstNameSpace.NameSpaceClass();
 // the class NotExported cannot be accessed outside the namespace because it doesn't have the axport keyword
+class User {
+    email;
+    name;
+    constructor(email, name) {
+        this.email = email;
+        this.name = name;
+    }
+}
+const newUser = new User("dav@.com", "david");
 //# sourceMappingURL=classes.js.map

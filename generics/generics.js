@@ -30,7 +30,7 @@ class concatenator {
 }
 let concator = new concatenator();
 let concateResult = concator.concatenateArray(['first', 'second', 'third']);
-console.log(concateResult);
+// console.log(concateResult);
 concateResult = concator.concatenateArray([1, 2, 3]);
-console.log(concateResult);
+// console.log(concateResult);
 //# sourceMappingURL=generics.js.map

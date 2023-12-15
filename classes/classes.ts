@@ -106,22 +106,21 @@ let classWithAccessors = new ClassWithAccessors();
 classWithAccessors.id = 78;
 console.log(classWithAccessors);
 
-
-// static properties 
+// static properties
 class StaticProperty {
-  static count: number = 0
-  
-  updatecount(){
-    StaticProperty.count++
+  static count: number = 0;
+
+  updatecount() {
+    StaticProperty.count++;
   }
 }
-let firstInstance = new StaticProperty()
-let secondInstance = new StaticProperty()
-firstInstance.updatecount()
+let firstInstance = new StaticProperty();
+let secondInstance = new StaticProperty();
+firstInstance.updatecount();
 console.log(StaticProperty.count);
-secondInstance.updatecount()
+secondInstance.updatecount();
 console.log(StaticProperty.count);
-firstInstance.updatecount()
+firstInstance.updatecount();
 console.log(StaticProperty.count);
 
 // namespaces
@@ -129,6 +128,28 @@ namespace FirstNameSpace {
   export class NameSpaceClass {}
   class NotExported {}
 }
-let nameSpaceClass = new FirstNameSpace.NameSpaceClass()
+let nameSpaceClass = new FirstNameSpace.NameSpaceClass();
 
 // the class NotExported cannot be accessed outside the namespace because it doesn't have the axport keyword
+
+class User {
+  private _courseCount = 0
+  private readonly city: string = "Yaounde";
+  constructor(public email: string, public name: string) {
+    this.email = email;
+    this.name = name;
+  }
+
+  get courseCount(){
+    return this._courseCount
+  }
+  set courseCount(courseNum){
+    if(courseNum < 1){
+      throw new Error("buy a course")
+    }
+    this._courseCount = courseNum
+  }
+
+}
+
+const newUser = new User("dav@.com", "david");
